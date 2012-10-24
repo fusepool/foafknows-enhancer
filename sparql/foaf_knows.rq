@@ -1,0 +1,13 @@
+#
+# Fetches Tim Berners-Lee FOAF profile and gives a list of all foaf:Persons he knows and their foaf:name
+# Note that this query does *not* get the name from the refering URIs but from his profile only
+# 
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT ?subject ?who ?name FROM <http://dig.csail.mit.edu/2008/webdav/timbl/foaf.rdf>
+
+WHERE {
+?subject foaf:knows ?who .
+?who a foaf:Person ; 
+foaf:name ?name .
+}

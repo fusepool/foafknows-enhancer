@@ -1,0 +1,12 @@
+#
+# Fetches foaf:givenname & foaf:family_name from Dave Becket's FOAF profile
+# 
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+
+SELECT ?subject ?givenname ?family_name FROM <http://www.dajobe.org/foaf.rdf#i>
+
+WHERE {
+?subject a foaf:Person ; 
+foaf:givenname ?givenname ;
+foaf:family_name ?family_name .
+}

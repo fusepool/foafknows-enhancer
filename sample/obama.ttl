@@ -1,0 +1,26 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+<urn:enhancement-804f7434-ef1b-3216-f585-f00d933988c8>
+    <http://fise.iks-project.eu/ontology/confidence> 0.41383478117374917 ;
+    <http://fise.iks-project.eu/ontology/end> "44"^^<http://www.w3.org/2001/XMLSchema#int> ;
+    <http://fise.iks-project.eu/ontology/extracted-from> <urn:content-item-sha1-fc760851c4b39f5028bf9008ea91c1481182559d> ;
+    <http://fise.iks-project.eu/ontology/selected-text> "Barack Obama"@en ;
+    <http://fise.iks-project.eu/ontology/selection-context> "President of the United States  Barack Obama"@en ;
+    <http://fise.iks-project.eu/ontology/start> "32"^^<http://www.w3.org/2001/XMLSchema#int> ;
+    <http://purl.org/dc/terms/created> "2012-10-26T10:18:36.528Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/creator> "org.apache.stanbol.enhancer.engines.opennlp.impl.NEREngineCore"^^<http://www.w3.org/2001/XMLSchema#string> ;
+    <http://purl.org/dc/terms/type> <http://dbpedia.org/ontology/Person> ;
+    a <http://fise.iks-project.eu/ontology/Enhancement>, <http://fise.iks-project.eu/ontology/TextAnnotation> .
+
+<urn:enhancement-c1120c8d-b817-4c8a-0713-6b2bf8ce0fa8>
+    <http://fise.iks-project.eu/ontology/confidence> 1.0 ;
+    <http://fise.iks-project.eu/ontology/entity-label> "Barack Obama"@en ;
+    <http://fise.iks-project.eu/ontology/entity-reference> <http://dbpedia.org/resource/Barack_Obama> ;
+    <http://fise.iks-project.eu/ontology/entity-type> <http://dbpedia.org/ontology/OfficeHolder>, <http://dbpedia.org/ontology/Person>, <http://www.w3.org/2002/07/owl#Thing>, <http://xmlns.com/foaf/0.1/Person> ;
+    <http://fise.iks-project.eu/ontology/extracted-from> <urn:content-item-sha1-fc760851c4b39f5028bf9008ea91c1481182559d> ;
+    <http://purl.org/dc/terms/created> "2012-10-26T10:18:36.546Z"^^<http://www.w3.org/2001/XMLSchema#dateTime> ;
+    <http://purl.org/dc/terms/creator> "org.apache.stanbol.enhancer.engines.entitytagging.impl.NamedEntityTaggingEngine"^^<http://www.w3.org/2001/XMLSchema#string> ;
+    <http://purl.org/dc/terms/relation> <urn:enhancement-804f7434-ef1b-3216-f585-f00d933988c8> ;
+    <http://stanbol.apache.org/ontology/entityhub/entityhub#site> "dbpedia" ;
+    a <http://fise.iks-project.eu/ontology/Enhancement>, <http://fise.iks-project.eu/ontology/EntityAnnotation> .
+

@@ -26,7 +26,7 @@ Compile and install the bundle into the Fusepool Platform
 =========================================================
 
 Go to the root folder of the foafknows-enhancer project and run the following command
->mvn install
+>mvn install -Dmaven.test.skip=true
 
 If the compilation is successful you should find two jar files (bundles) within the target/ subfolder named after the artifactId and version of the project stated in the Maven pom.xml file.
 We need only the bundle with the compiled files that should be demo.enhancer.engine.foafknows-01-SNAPSHOT.jar if you didn't change your pom.xml file.
